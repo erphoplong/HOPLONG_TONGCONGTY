@@ -18,7 +18,7 @@ namespace ERP.Web.Models.Database
         public string MA_HANG { get; set; }
         public string USERNAME { get; set; }
     
-        public virtual CCTC_NHAN_VIEN CCTC_NHAN_VIEN { get; set; }
         public virtual HH HH { get; set; }
+        public virtual HT_NGUOI_DUNG HT_NGUOI_DUNG { get; set; }
     }
 }

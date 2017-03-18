@@ -128,7 +128,7 @@
 
                     <li ng-class="treeview()" ng-repeat="item in danhsachmenucha" ng-mouseup="push(item.MA_MENU)" style="border-bottom: 1px solid white;" >
 
-                        <a href="#" style="font-size:15px; font-weight:bold">
+                        <a href="#" style="font-size:14px;">
                             <i ng-class="fa()"></i>
                             <span>{{item.TEN_MENU}}</span>
                             <span ng-class="pullright()">
@@ -137,7 +137,7 @@
                         </a>
 
                         <ul class="treeview-menu" ng-repeat="abc in listmenu">
-                            <li><a href="{{abc.LINK}}"><i class="fa fa-circle-o"></i>{{abc.TEN_MENU}}</a></li> 
+                            <li style="padding-left: 20px;"><a href="{{abc.LINK}}"><i class="fa fa-circle-o"></i>{{abc.TEN_MENU}}</a></li> 
 
                         </ul>
                     </li>

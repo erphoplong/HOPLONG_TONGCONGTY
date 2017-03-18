@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using ERP.Web.Models.Database;
+using ERP.Web.Models.NewModels;
 
 namespace ERP.Web.Api.HeThong
 {
@@ -16,41 +17,33 @@ namespace ERP.Web.Api.HeThong
     {
         private ERP_DATABASEEntities db = new ERP_DATABASEEntities();
 
-        // GET: api/Api_BangChamCong
-        public List<CCTC_BANG_CHAM_CONG> GetCCTC_BANG_CHAM_CONG(string id)
+        // GET: api/Api_BangChamCong/USERNAME
+        public List<BangChamCong> GetCCTC_BANG_CHAM_CONG(string id)
         {
-            var vData = db.CCTC_BANG_CHAM_CONG.Where(x => x.USERNAME == id);
-            var result = vData.ToList().Select(x => new CCTC_BANG_CHAM_CONG()
+            List<BangChamCong> listchamcong = new List<BangChamCong>();
+            var vData = db.CCTC_BANG_CHAM_CONG.Where(x => x.USERNAME == id).ToList();
+            foreach (var item in vData)
             {
-                THANG_CHAM_CONG = x.THANG_CHAM_CONG,
-                NGAY_CHUAN = x.NGAY_CHUAN,
-                USERNAME = x.USERNAME,
-                GIO_DI_MUON = x.GIO_VE_SOM,
-                GIO_VE_SOM = x.GIO_VE_SOM,
-                TANG_CA_NGAY_THUONG = x.TANG_CA_NGAY_THUONG,
-                TANG_CA_NGAY_LE = x.TANG_CA_NGAY_LE,
-                SO_LAN_QUEN_CHAM = x.SO_LAN_QUEN_CHAM,
-                SO_NGAY_NGHI = x.SO_NGAY_NGHI,
-                CONG_THUC_TE = x.CONG_THUC_TE,
-                VAY_TIN_DUNG = x.VAY_TIN_DUNG,
-                UNG_LUONG = x.UNG_LUONG,
-                GHI_CHU = x.GHI_CHU,
-            }).ToList();
+                BangChamCong cc = new BangChamCong();
+                cc.THANG_CHAM_CONG = item.THANG_CHAM_CONG;
+                cc.NGAY_CHUAN = String.Format("{0:#,##0.##}",item.NGAY_CHUAN);
+                cc.USERNAME = item.USERNAME;
+                cc.GIO_DI_MUON = String.Format("{0:N2}", item.GIO_DI_MUON);
+                cc.GIO_VE_SOM = String.Format("{0:#,##0.##}", item.GIO_VE_SOM);
+                cc.TANG_CA_NGAY_THUONG = String.Format("{0:#,##0.##}", item.TANG_CA_NGAY_THUONG);
+                cc.TANG_CA_NGAY_LE = String.Format("{0:#,##0.##}", item.TANG_CA_NGAY_LE);
+                cc.SO_LAN_QUEN_CHAM = String.Format("{0:#,##0.##}", item.SO_LAN_QUEN_CHAM);
+                cc.SO_NGAY_NGHI = String.Format("{0:#,##0.##}", item.SO_NGAY_NGHI);
+                cc.CONG_THUC_TE = String.Format("{0:#,##0.##}", item.CONG_THUC_TE);
+                cc.VAY_TIN_DUNG = String.Format("{0:#,##0.##}", item.VAY_TIN_DUNG);
+                cc.UNG_LUONG = String.Format("{0:#,##0.##}", item.UNG_LUONG);
+                cc.GHI_CHU = item.GHI_CHU;
+                listchamcong.Add(cc);
+            }
+            var result = listchamcong.ToList();
             return result;
         }
 
-        // GET: api/Api_BangChamCong/5
-        [ResponseType(typeof(CCTC_BANG_CHAM_CONG))]
-        public IHttpActionResult GetCCTC_BANG_CHAM_CONG()
-        {
-            CCTC_BANG_CHAM_CONG cCTC_BANG_CHAM_CONG = db.CCTC_BANG_CHAM_CONG.Find();
-            if (cCTC_BANG_CHAM_CONG == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(cCTC_BANG_CHAM_CONG);
-        }
 
         // PUT: api/Api_BangChamCong/5
         [ResponseType(typeof(void))]

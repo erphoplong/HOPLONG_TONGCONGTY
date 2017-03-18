@@ -10,12 +10,12 @@
     <input type="hidden" value="@Session["PASSWORD"]" id="sessionpw" />
     <input type="hidden" value="@Session["HO_VA_TEN"]" id="hovaten" />
     <input type="hidden" id="vh_iAct_1" class="isActive" name="isActive" value="@Session["ALLOWED"]" />
-    <div>
+    <div style="margin: 20px;padding:5px;">
         <ul class="nav nav-tabs" style="margin-bottom: 20px;    ">
             <li class="active"><a data-toggle="tab" href="#chitiet">User Details</a></li>
             <li><a data-toggle="tab" href="#doimatkhau">Change Password</a></li>
         </ul>
-        <div class="tab-content">
+        <div class="tab-content" style="margin: 20px;padding:5px;padding-bottom: 50px; padding-left: 40px; border: 1px solid #DCF5FC;box-shadow:3px 3px 3px #DCF5FC;">
             <div id="chitiet" class="tab-pane fade in active">
                 <div class="row" ng-repeat="nv in list_details">
                     <div class="col-md-4">
