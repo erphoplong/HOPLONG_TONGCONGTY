@@ -18,6 +18,7 @@ namespace ERP.Web.Models.Database
         public CCTC_CONG_TY()
         {
             this.BH_DON_HANG_DU_KIEN = new HashSet<BH_DON_HANG_DU_KIEN>();
+            this.CN_NHOM_NGHIEP_VU = new HashSet<CN_NHOM_NGHIEP_VU>();
             this.DM_CHUNG_TU = new HashSet<DM_CHUNG_TU>();
             this.DM_DOI_TUONG = new HashSet<DM_DOI_TUONG>();
             this.KHs = new HashSet<KH>();
@@ -54,6 +55,8 @@ namespace ERP.Web.Models.Database
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BH_DON_HANG_DU_KIEN> BH_DON_HANG_DU_KIEN { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CN_NHOM_NGHIEP_VU> CN_NHOM_NGHIEP_VU { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DM_CHUNG_TU> DM_CHUNG_TU { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -929,6 +929,57 @@ app.controller('lichsuCtrl', function (lichsuService, $scope) {
 
 
 
+app.controller('nhomnghiepvuCtrl', function (nhomnghiepvuService, $scope) {
+    $scope.load_nhomnghiepvu = function () {
+        nhomnghiepvuService.get_nhomnghiepvu().then(function (a) {
+            $scope.list_nhomnghiepvu = a;
+        });
+    };
+    $scope.load_nhomnghiepvu();
+
+    $scope.edit = function (item) {
+        $scope.item = item;
+    };
+
+    $scope.add = function () {
+        var data_add = {
+            TEN_NHOM: $scope.tennhom,
+            DIEN_GIAI : $scope.diengiai
+        }
+        nhomnghiepvuService.add_nhomnghiepvu(data_add).then(function (response) {
+            $scope.load_nhomnghiepvu();
+        });
+    };
+
+    $scope.save = function (id) {
+        var data_save = {
+            ID: id,
+            TEN_NHOM: $scope.item.TEN_NHOM,
+            DIEN_GIAI : $scope.item.DIEN_GIAI
+        }
+        nhomnghiepvuService.save_nhomnghiepvu(id, data_save).then(function (response) {
+            $scope.load_nhomnghiepvu();
+        });
+    };
+
+    $scope.delete = function (id) {
+        var data_delete = {
+            ID : id
+        }
+        nhomnghiepvuService.delete_nhomnghiepvu(id, data_delete).then(function (response) {
+            $scope.load_nhomnghiepvu();
+        });
+    };
+});
+
+
+
+
+
+
+
+
+
 
 function reload() {
     location.reload();

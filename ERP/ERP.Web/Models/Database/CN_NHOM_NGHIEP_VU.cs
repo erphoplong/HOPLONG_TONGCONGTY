@@ -24,7 +24,9 @@ namespace ERP.Web.Models.Database
         public int ID { get; set; }
         public string TEN_NHOM { get; set; }
         public string DIEN_GIAI { get; set; }
+        public string TRUC_THUOC { get; set; }
     
+        public virtual CCTC_CONG_TY CCTC_CONG_TY { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CN_CHI_TIET_NGHIEP_VU> CN_CHI_TIET_NGHIEP_VU { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

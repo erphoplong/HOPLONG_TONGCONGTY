@@ -17,6 +17,7 @@ namespace ERP.Web.Models.Database
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CCTC_NHAN_VIEN()
         {
+            this.CCTC_BANG_CHAM_CONG = new HashSet<CCTC_BANG_CHAM_CONG>();
             this.CCTC_BANG_LUONG = new HashSet<CCTC_BANG_LUONG>();
             this.KH_SALES_PHU_TRACH = new HashSet<KH_SALES_PHU_TRACH>();
             this.KHO_CHUYEN_KHO = new HashSet<KHO_CHUYEN_KHO>();
@@ -31,7 +32,6 @@ namespace ERP.Web.Models.Database
             this.MH_MDV = new HashSet<MH_MDV>();
             this.NCC_PUR_PHU_TRACH = new HashSet<NCC_PUR_PHU_TRACH>();
             this.NH_CHUYEN_TIEN_NOI_BO = new HashSet<NH_CHUYEN_TIEN_NOI_BO>();
-            this.CCTC_BANG_CHAM_CONG = new HashSet<CCTC_BANG_CHAM_CONG>();
         }
     
         public string USERNAME { get; set; }
@@ -43,6 +43,8 @@ namespace ERP.Web.Models.Database
         public string THANH_TICH_CONG_TAC { get; set; }
         public string MA_PHONG_BAN { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CCTC_BANG_CHAM_CONG> CCTC_BANG_CHAM_CONG { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CCTC_BANG_LUONG> CCTC_BANG_LUONG { get; set; }
         public virtual CCTC_PHONG_BAN CCTC_PHONG_BAN { get; set; }
@@ -73,7 +75,5 @@ namespace ERP.Web.Models.Database
         public virtual ICollection<NCC_PUR_PHU_TRACH> NCC_PUR_PHU_TRACH { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NH_CHUYEN_TIEN_NOI_BO> NH_CHUYEN_TIEN_NOI_BO { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CCTC_BANG_CHAM_CONG> CCTC_BANG_CHAM_CONG { get; set; }
     }
 }
