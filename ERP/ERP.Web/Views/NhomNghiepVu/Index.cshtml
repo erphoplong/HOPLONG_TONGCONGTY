@@ -58,7 +58,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="name">Tên nhóm nghiệp vụ: </label>
                                 <div class="col-md-4">
-                                    <input id="makho" name="makho" type="text" placeholder="Inventory Code" class="form-control input-md" ng-model="item.TEN_NHOM">
+                                    <input id="makho" name="makho" type="text" placeholder="Inventory Code" class="form-control input-md" ng-model="item.TEN_NHOM" ng-disabled="true">
                                 </div>
                             </div>
                             <!-- Text input-->
@@ -72,7 +72,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="anmelden"></label>
                                 <div class="col-md-8">
-                                    <button id="addnew" name="addnew" class="btn btn-success" ng-click="save(item.ID)" data-dismiss="modal">Save</button>
+                                    <button id="addnew" name="addnew" class="btn btn-success" ng-click="save(item.TEN_NHOM)" data-dismiss="modal">Save</button>
                                     <button id="exit" name="exit" class="btn btn-danger" data-dismiss="modal">Exit</button>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="delete"></label>
                                 <div class="col-md-8">
-                                    <button id="delete" name="delete" class="btn btn-danger" ng-click="delete(item.ID)" data-dismiss="modal">Delete</button>
+                                    <button id="delete" name="delete" class="btn btn-danger" ng-click="delete(item.TEN_NHOM)" data-dismiss="modal">Delete</button>
                                     <button id="exit" name="exit" class="btn btn-success" data-dismiss="modal">Exit</button>
                                 </div>
                             </div>
@@ -119,18 +119,21 @@
                 <th>DIỄN GIẢI</th>
                 <th>EDIT</th>
                 <th>DELETE</th>
+                <th>ACTION</th>
             </tr>            
         </thead>
         <tbody>
             <tr ng-repeat="item in list_nhomnghiepvu">
                 <td>{{item.TEN_NHOM}}</td>
                 <td>{{item.DIEN_GIAI}}</td>
+
                 <td>
                     <button class="btn btn-success btn-circle" ng-click="edit(item)" type="button" data-toggle="modal" data-target="#myEdit"><i class="glyphicon glyphicon-edit"></i></button>
                 </td>
                 <td>
                     <button class="btn btn-warning btn-circle" ng-click="edit(item)" type="button" data-toggle="modal" data-target="#delete_item"><i class="glyphicon glyphicon-remove"></i></button>
                 </td>
+                <td><a href="/NhomNghiepVu/Details/{{item.TEN_NHOM}}">Chi tiết nhóm nghiệp vụ</a></td>
             </tr>
         </tbody>
     </table>

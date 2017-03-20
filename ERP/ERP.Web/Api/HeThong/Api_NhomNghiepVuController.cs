@@ -22,7 +22,6 @@ namespace ERP.Web.Api.HeThong
             var vData = db.CN_NHOM_NGHIEP_VU;
             var result = vData.ToList().Select(x => new CN_NHOM_NGHIEP_VU()
             {
-                ID = x.ID,
                 TEN_NHOM = x.TEN_NHOM,
                 DIEN_GIAI = x.DIEN_GIAI,
             }).ToList();
@@ -31,7 +30,7 @@ namespace ERP.Web.Api.HeThong
 
         // GET: api/Api_NhomNghiepVu/5
         [ResponseType(typeof(CN_NHOM_NGHIEP_VU))]
-        public IHttpActionResult GetCN_NHOM_NGHIEP_VU(int id)
+        public IHttpActionResult GetCN_NHOM_NGHIEP_VU(string id)
         {
             CN_NHOM_NGHIEP_VU cN_NHOM_NGHIEP_VU = db.CN_NHOM_NGHIEP_VU.Find(id);
             if (cN_NHOM_NGHIEP_VU == null)
@@ -44,14 +43,14 @@ namespace ERP.Web.Api.HeThong
 
         // PUT: api/Api_NhomNghiepVu/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutCN_NHOM_NGHIEP_VU(int id, CN_NHOM_NGHIEP_VU cN_NHOM_NGHIEP_VU)
+        public IHttpActionResult PutCN_NHOM_NGHIEP_VU(string id, CN_NHOM_NGHIEP_VU cN_NHOM_NGHIEP_VU)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != cN_NHOM_NGHIEP_VU.ID)
+            if (id != cN_NHOM_NGHIEP_VU.TEN_NHOM)
             {
                 return BadRequest();
             }
@@ -87,14 +86,29 @@ namespace ERP.Web.Api.HeThong
             }
 
             db.CN_NHOM_NGHIEP_VU.Add(cN_NHOM_NGHIEP_VU);
-            db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = cN_NHOM_NGHIEP_VU.ID }, cN_NHOM_NGHIEP_VU);
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (DbUpdateException)
+            {
+                if (CN_NHOM_NGHIEP_VUExists(cN_NHOM_NGHIEP_VU.TEN_NHOM))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return CreatedAtRoute("DefaultApi", new { id = cN_NHOM_NGHIEP_VU.TEN_NHOM }, cN_NHOM_NGHIEP_VU);
         }
 
         // DELETE: api/Api_NhomNghiepVu/5
         [ResponseType(typeof(CN_NHOM_NGHIEP_VU))]
-        public IHttpActionResult DeleteCN_NHOM_NGHIEP_VU(int id)
+        public IHttpActionResult DeleteCN_NHOM_NGHIEP_VU(string id)
         {
             CN_NHOM_NGHIEP_VU cN_NHOM_NGHIEP_VU = db.CN_NHOM_NGHIEP_VU.Find(id);
             if (cN_NHOM_NGHIEP_VU == null)
@@ -117,9 +131,9 @@ namespace ERP.Web.Api.HeThong
             base.Dispose(disposing);
         }
 
-        private bool CN_NHOM_NGHIEP_VUExists(int id)
+        private bool CN_NHOM_NGHIEP_VUExists(string id)
         {
-            return db.CN_NHOM_NGHIEP_VU.Count(e => e.ID == id) > 0;
+            return db.CN_NHOM_NGHIEP_VU.Count(e => e.TEN_NHOM == id) > 0;
         }
     }
 }
