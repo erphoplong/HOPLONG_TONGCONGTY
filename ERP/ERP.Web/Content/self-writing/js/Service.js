@@ -330,3 +330,24 @@ app.service('lichsuService', function ($http) {
         });
     };
 });
+
+
+app.service('nhomnghiepvuService', function ($http) {
+    this.get_nhomnghiepvu = function () {
+        return $http.get('/api/Api_NhomNghiepVu').then(function (response) {
+            return response.data;
+        });
+    };
+
+    this.save_nhomnghiepvu = function (id, data_save) {
+        return $http.put('/api/Api_NhomNghiepVu/' + id, data_save);
+    }
+
+    this.add_nhomnghiepvu = function (data_addnew) {
+        return $http.post('/api/Api_NhomNghiepVu', data_addnew);
+    }
+
+    this.delete_nhomnghiepvu = function (id, data_delete) {
+        return $http.delete('/api/Api_NhomNghiepVu/' + id, data_delete);
+    }
+});

@@ -7,7 +7,7 @@
     <div class="panel content panel-default col-md-9" style="overflow: auto;">
         <div class="panel-heading title">Thông báo</div>
         <div class="panel-body">
-            <div ng-repeat="item in listpost" class="col-md-12" style="margin-bottom: 20px;padding: 20px;border: 1px solid #DCF5FC;box-shadow: 3px 3px 3px #DCF5FC; border-radius:5px">
+            <div ng-repeat="item in listpost | orderBy : '-NGAY_DANG_BAI'" class="col-md-12" style="margin-bottom: 20px;padding: 20px;border: 1px solid #DCF5FC;box-shadow: 3px 3px 3px #DCF5FC; border-radius:5px">
                 <div class=col-md-3>
                     <a href="/Home/Details/{{item.MA_BAI_VIET}}"><img ng-src="~/Content/Images/BaiViet/{{item.ANH_BAI_VIET}}" style="width: 100%;height: 150px;" /></a>
                 </div>

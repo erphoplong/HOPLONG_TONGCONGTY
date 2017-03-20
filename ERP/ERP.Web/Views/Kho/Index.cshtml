@@ -218,13 +218,13 @@
                 <td>{{item.MA_KHO_CHA}}</td>
                 <td>{{item.TRUC_THUOC}}</td>
                 <td>{{item.GHI_CHU}}</td>
-                <td>
-                    <button class="btn btn-success btn-circle" ng-click="edit(item)" type="button" data-toggle="modal" data-target="#myEdit"><i class="glyphicon glyphicon-edit"></i></button>
-                </td>
-                <td>
-                    <button class="btn btn-warning btn-circle" ng-click="edit(item)" type="button" data-toggle="modal" data-target="#delete_item"><i class="glyphicon glyphicon-remove"></i></button>
-                    <!--<button class="btn btn-warning btn-circle" ng-click="delete(item.MA_KHO)"><i class="glyphicon glyphicon-remove"></i></button>-->
-                </td>
+                    <td>
+                        <button class="btn btn-success btn-circle" ng-click="edit(item)" type="button" data-toggle="modal" data-target="#myEdit"><i class="glyphicon glyphicon-edit"></i></button>
+                    </td>
+                    <td>
+                        <button class="btn btn-warning btn-circle" ng-click="edit(item)" type="button" data-toggle="modal" data-target="#delete_item"><i class="glyphicon glyphicon-remove"></i></button>
+                        <!--<button class="btn btn-warning btn-circle" ng-click="delete(item.MA_KHO)"><i class="glyphicon glyphicon-remove"></i></button>-->
+                    </td>
             </tr>
             <tr ng-if="item.expanded" dir-paginate-end=""></tr>
         </tbody>

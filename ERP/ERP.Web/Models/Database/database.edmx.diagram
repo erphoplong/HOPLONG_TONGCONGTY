@@ -5,74 +5,75 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3574a8df5977458fbc90bd992777a00e" Name="Diagram1">
-        <EntityTypeShape EntityType="ERP_DATABASEModel.BH_DON_HANG_DU_KIEN" Width="1.5" PointX="10.5" PointY="55" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CATEGORy" Width="1.5" PointX="1.5" PointY="0.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_BANG_CHAM_CONG" Width="1.5" PointX="12.75" PointY="61" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_BANG_LUONG" Width="1.5" PointX="12.75" PointY="65.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_CONG_TY" Width="1.5" PointX="5.25" PointY="51" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_MO_HINH_CONG_TY" Width="1.5" PointX="3" PointY="53.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_NHAN_VIEN" Width="1.5" PointX="10.5" PointY="45.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_PHONG_BAN" Width="1.5" PointX="7.5" PointY="53.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_CHI_TIET_NGHIEP_VU" Width="1.5" PointX="0.75" PointY="13.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_NGHIEP_VU" Width="1.5" PointX="1.5" PointY="10.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_NGHIEP_VU_NHAN_VIEN" Width="1.5" PointX="7.5" PointY="11.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_NHOM_NGHIEP_VU" Width="1.5" PointX="3" PointY="13.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_CHUNG_TU" Width="1.5" PointX="7.5" PointY="49.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_DINH_KHOAN_TU_DONG" Width="1.5" PointX="6.75" PointY="33" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_DOI_TUONG" Width="1.5" PointX="7.5" PointY="22.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_KHO" Width="1.5" PointX="12.75" PointY="29.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_LOAI_CHUNG_TU" Width="1.5" PointX="4.5" PointY="28.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_LOAI_DOI_TUONG" Width="1.5" PointX="5.25" PointY="23.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_LOAI_TK_NGAN_HANG" Width="1.5" PointX="3" PointY="18.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_TAI_KHOAN_HACH_TOAN" Width="1.5" PointX="1.5" PointY="35.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_TK_NGAN_HANG_NOI_BO" Width="1.5" PointX="5.25" PointY="17.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.DV" Width="1.5" PointX="4.5" PointY="63.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HH" Width="1.5" PointX="9.75" PointY="36.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_HANG_DUOC_QUAN_TAM" Width="1.5" PointX="15" PointY="33.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_NHOM_VTHH" Width="1.5" PointX="7.5" PointY="29" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_TON_KHO" Width="1.5" PointX="12" PointY="42.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_TONKHO_HANG" Width="1.5" PointX="12" PointY="34.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HT_NGUOI_DUNG" Width="1.5" PointX="5.25" PointY="11.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH" Width="1.5" PointX="13.5" PointY="22.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_DC_XUAT_HANG" Width="1.5" PointX="15.75" PointY="10.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_LIEN_HE" Width="1.5" PointX="15.75" PointY="13.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_LOAI" Width="1.5" PointX="16.5" PointY="7.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_PHAN_LOAI_KHACH" Width="1.5" PointX="18.75" PointY="24.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_SALES_PHU_TRACH" Width="1.5" PointX="18" PointY="29.625" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_TK_NGAN_HANG" Width="1.5" PointX="15.75" PointY="18.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CHUYEN_KHO" Width="1.5" PointX="12.75" PointY="73" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_CHUYEN_KHO" Width="1.5" PointX="18" PointY="37.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_DNXH" Width="1.5" PointX="15" PointY="43.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_NHAP_KHO" Width="1.5" PointX="15" PointY="36.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_PHIEU_GIU_HANG" Width="1.5" PointX="18" PointY="33.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_XUAT_KHO" Width="1.5" PointX="12" PointY="37.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_DNXH" Width="1.5" PointX="12.75" PointY="53.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_NHAP_KHO" Width="1.5" PointX="12.75" PointY="46.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_PHIEU_GIU_HANG" Width="1.5" PointX="15.75" PointY="23.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_XUAT_KHO" Width="1.5" PointX="9.75" PointY="26.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.MAU_SO_HOA_DON" Width="1.5" PointX="1.5" PointY="4.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.MENU" Width="1.5" PointX="5.25" PointY="65.625" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.MENU_USER" Width="1.5" PointX="15.75" PointY="55.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.MH_CT_MDV" Width="1.5" PointX="6.75" PointY="36.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.MH_MDV" Width="1.5" PointX="4.5" PointY="59.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC" Width="1.5" PointX="1.5" PointY="24.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_LIEN_HE" Width="1.5" PointX="13.5" PointY="76.75" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_LOAI" Width="1.5" PointX="2.25" PointY="7" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_LOAI_HANG_CUNG_CAP" Width="1.5" PointX="9.75" PointY="19" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_PUR_PHU_TRACH" Width="1.5" PointX="15.75" PointY="48.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_TK_NGAN_HANG" Width="1.5" PointX="10.25" PointY="22.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_CHUYEN_TIEN_NOI_BO" Width="1.5" PointX="6.75" PointY="42.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_CT_NTTK" Width="1.5" PointX="9.75" PointY="31.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_CT_UNC" Width="1.5" PointX="3.75" PointY="43.375" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_NTTK" Width="1.5" PointX="7.5" PointY="14.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_UNC" Width="1.5" PointX="15.75" PointY="28" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.POST_CATEGORIES" Width="1.5" PointX="3.75" PointY="1" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.POST" Width="1.5" PointX="1.5" PointY="49.875" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_CT_PHIEU_CHI" Width="1.5" PointX="3.75" PointY="36.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_CT_PHIEU_THU" Width="1.5" PointX="3.75" PointY="31.5" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_PHIEU_CHI" Width="1.5" PointX="1.5" PointY="44.125" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_PHIEU_THU" Width="1.5" PointX="1.5" PointY="30.25" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.XL_THAM_CHIEU_CHUNG_TU" Width="1.5" PointX="9.75" PointY="58.5" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.BH_DON_HANG_DU_KIEN" Width="1.5" PointX="6.75" PointY="60.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CATEGORy" Width="1.5" PointX="5.75" PointY="8.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_BANG_CHAM_CONG" Width="1.5" PointX="3" PointY="90.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_BANG_LUONG" Width="1.5" PointX="3" PointY="82.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_CONG_TY" Width="1.5" PointX="1.5" PointY="15.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_MO_HINH_CONG_TY" Width="1.5" PointX="1.5" PointY="12.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_NHAN_VIEN" Width="1.5" PointX="0.75" PointY="2.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CCTC_PHONG_BAN" Width="1.5" PointX="0.75" PointY="25.125" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_CHI_TIET_NGHIEP_VU" Width="1.5" PointX="1.5" PointY="64.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_NGHIEP_VU" Width="1.5" PointX="1.5" PointY="68" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_NGHIEP_VU_NHAN_VIEN" Width="1.5" PointX="6.75" PointY="57.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.CN_NHOM_NGHIEP_VU" Width="1.5" PointX="1.5" PointY="60.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_CHUNG_TU" Width="1.5" PointX="8" PointY="22.125" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_DINH_KHOAN_TU_DONG" Width="1.5" PointX="8" PointY="34.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_DOI_TUONG" Width="1.5" PointX="0.75" PointY="32.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_KHO" Width="1.5" PointX="3" PointY="26.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_LOAI_CHUNG_TU" Width="1.5" PointX="5.75" PointY="29.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_LOAI_DOI_TUONG" Width="1.5" PointX="1.5" PointY="9.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_LOAI_TK_NGAN_HANG" Width="1.5" PointX="1.5" PointY="76.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_TAI_KHOAN_HACH_TOAN" Width="1.5" PointX="0.75" PointY="37.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DM_TK_NGAN_HANG_NOI_BO" Width="1.5" PointX="1.5" PointY="71.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.DV" Width="1.5" PointX="3.75" PointY="59" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HH" Width="1.5" PointX="3" PointY="38.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_HANG_DUOC_QUAN_TAM" Width="1.5" PointX="14.25" PointY="40.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_NHOM_VTHH" Width="1.5" PointX="0.75" PointY="28.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_TON_KHO" Width="1.5" PointX="10.25" PointY="32.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HH_TONKHO_HANG" Width="1.5" PointX="10.25" PointY="35.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HT_LICH_SU_DANG_NHAP" Width="1.5" PointX="3.75" PointY="62" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.HT_NGUOI_DUNG" Width="1.5" PointX="1.5" PointY="54.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH" Width="1.5" PointX="9.75" PointY="52.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_DC_XUAT_HANG" Width="1.5" PointX="12" PointY="67.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_LIEN_HE" Width="1.5" PointX="12" PointY="58.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_LOAI" Width="1.5" PointX="12.75" PointY="71" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_PHAN_LOAI_KHACH" Width="1.5" PointX="15" PointY="54.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_SALES_PHU_TRACH" Width="1.5" PointX="14.25" PointY="30.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KH_TK_NGAN_HANG" Width="1.5" PointX="12" PointY="63.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CHUYEN_KHO" Width="1.5" PointX="3" PointY="79.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_CHUYEN_KHO" Width="1.5" PointX="13.25" PointY="34.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_DNXH" Width="1.5" PointX="11.25" PointY="45.125" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_NHAP_KHO" Width="1.5" PointX="5.25" PointY="32.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_PHIEU_GIU_HANG" Width="1.5" PointX="14.25" PointY="43.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_CT_XUAT_KHO" Width="1.5" PointX="11.25" PointY="39.125" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_DNXH" Width="1.5" PointX="9" PointY="59.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_NHAP_KHO" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_PHIEU_GIU_HANG" Width="1.5" PointX="12" PointY="53.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.KHO_XUAT_KHO" Width="1.5" PointX="9" PointY="27.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.MAU_SO_HOA_DON" Width="1.5" PointX="8.75" PointY="2.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.MENU" Width="1.5" PointX="3.75" PointY="9.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.MENU_USER" Width="1.5" PointX="6" PointY="14.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.MH_CT_MDV" Width="1.5" PointX="6" PointY="44.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.MH_MDV" Width="1.5" PointX="3.75" PointY="55.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC" Width="1.5" PointX="6.75" PointY="65.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_LIEN_HE" Width="1.5" PointX="3.75" PointY="13.625" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_LOAI" Width="1.5" PointX="4.5" PointY="66.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_LOAI_HANG_CUNG_CAP" Width="1.5" PointX="16" PointY="48.5" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_PUR_PHU_TRACH" Width="1.5" PointX="6" PointY="4.5" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NCC_TK_NGAN_HANG" Width="1.5" PointX="9" PointY="70.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_CHUYEN_TIEN_NOI_BO" Width="1.5" PointX="9" PointY="38.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_CT_NTTK" Width="1.5" PointX="3" PointY="45.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_CT_UNC" Width="1.5" PointX="3" PointY="31.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_NTTK" Width="1.5" PointX="0.75" PointY="48.875" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.NH_UNC" Width="1.5" PointX="13.75" PointY="48.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.POST_CATEGORIES" Width="1.5" PointX="8" PointY="9" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.POST" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_CT_PHIEU_CHI" Width="1.5" PointX="9" PointY="45.125" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_CT_PHIEU_THU" Width="1.5" PointX="6" PointY="39.375" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_PHIEU_CHI" Width="1.5" PointX="6.75" PointY="51.125" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.QUY_PHIEU_THU" Width="1.5" PointX="3.75" PointY="50.25" />
+        <EntityTypeShape EntityType="ERP_DATABASEModel.XL_THAM_CHIEU_CHUNG_TU" Width="1.5" PointX="10.25" PointY="22.375" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__BH_DON_HA__MA_KH__6BCEF5F8" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__BH_DON_HA__TRUC___6EAB62A3" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__KHO_DNXH__MA_DU___7834CCDD" />
@@ -80,6 +81,7 @@
         <AssociationConnector Association="ERP_DATABASEModel.FK__POST_CATE__MA_DA__0BB1B5A5" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__CCTC_BANG__USERN__7D2E8C24" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__CCTC_BANG__USERN__09946309" />
+        <AssociationConnector Association="ERP_DATABASEModel.FK__CN_NHOM_N__TRUC___5C57A83E" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__DM_CHUNG___MA_CO__7849DB76" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__DM_DOI_TU__MA_CO__7E02B4CC" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__DM_KHACH___TRUC___1A69E950" />
@@ -115,7 +117,6 @@
         <AssociationConnector Association="ERP_DATABASEModel.FK__MH_MDV__NV_MUA_H__72E607DB" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NCC_PUR_P__PUR_P__3F6663D5" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NH_CHUYEN__NGUOI__2B5F6B28" />
-        <AssociationConnector Association="ERP_DATABASEModel.FK_HH_HANG_DUOC_QUAN_TAM_CCTC_NHAN_VIEN" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__MENU_USER__MA_PH__618671AF" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NGAN_HANG__DON_V__31B762FC" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NGAN_HANG__DON_V__681373AD" />
@@ -184,9 +185,11 @@
         <AssociationConnector Association="ERP_DATABASEModel.FK__KHO_CT_NH__MA_HA__078C1F06" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__KHO_CT_PH__MA_HA__6774552F" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__KHO_CT_XU__MA_HA__17C286CF" />
+        <AssociationConnector Association="ERP_DATABASEModel.FK_HH_HANG_DUOC_QUAN_TAM_HT_NGUOI_DUNG" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__DM_HANG_S__MA_NH__59FA5E80" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__DM_LOAI_H__MA_NH__0F624AF8" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__DM_TONKHO__MA_NH__6E01572D" />
+        <AssociationConnector Association="ERP_DATABASEModel.FK__HT_LICH_S__USERN__1A89E4E1" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NGAN_HANG__NGUOI__2CF2ADDF" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NGAN_HANG__NGUOI__5D95E53A" />
         <AssociationConnector Association="ERP_DATABASEModel.FK__NGAN_HANG__NHAN___22751F6C" />
@@ -225,8 +228,6 @@
         <AssociationConnector Association="ERP_DATABASEModel.FK__QUY_CT_PH__SO_CH__74AE54BC" />
         <AssociationConnector Association="ERP_DATABASEModel.CN_CHI_TIET_NHOM_NGHIEP_VU" />
         <AssociationConnector Association="ERP_DATABASEModel.CN_NHOM_NGUOI_DUNG_NGHIEP_VU" />
-        <EntityTypeShape EntityType="ERP_DATABASEModel.HT_LICH_SU_DANG_NHAP" Width="1.5" PointX="7.5" PointY="8.375" />
-        <AssociationConnector Association="ERP_DATABASEModel.FK__HT_LICH_S__USERN__1A89E4E1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
