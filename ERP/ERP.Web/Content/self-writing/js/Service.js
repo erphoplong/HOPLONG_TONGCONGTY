@@ -339,15 +339,37 @@ app.service('nhomnghiepvuService', function ($http) {
         });
     };
 
-    this.save_nhomnghiepvu = function (id, data_save) {
-        return $http.put('/api/Api_NhomNghiepVu/' + id, data_save);
+    this.save_nhomnghiepvu = function (tennhom, data_save) {
+        return $http.put('/api/Api_NhomNghiepVu/' + tennhom, data_save);
     }
 
     this.add_nhomnghiepvu = function (data_addnew) {
         return $http.post('/api/Api_NhomNghiepVu', data_addnew);
     }
 
-    this.delete_nhomnghiepvu = function (id, data_delete) {
-        return $http.delete('/api/Api_NhomNghiepVu/' + id, data_delete);
+    this.delete_nhomnghiepvu = function (tennhom, data_delete) {
+        return $http.delete('/api/Api_NhomNghiepVu/' + tennhom, data_delete);
     }
+});
+
+
+app.service('chitietnghiepvuService', function ($http) {
+    this.get_chitietnghiepvu = function () {
+        return $http.get('/api/CN_CHI_TIET_NGHIEP_VU').then(function (response) {
+            return response.data;
+        });
+    };
+
+    this.get_trangthai = function (nhomnghiepvu, mamota) {
+        return $http.get('/api/Api_CheckChiTiet/' + nhomnghiepvu + '/' + mamota).then(function (response) {
+            return response.data;
+        });
+    };
+    this.delete_chitietnhomnghiepvu = function (nhomnghiepvu,mamota) {
+        return $http.delete('/api/Api_ChiTietNhomNghiepVu/' + nhomnghiepvu + '/' + mamota);
+    }
+
+    this.add_chitietnhomnghiepvu = function (data_add) {
+        return $http.post('/api/Api_ChiTietNhomNghiepVu', data_add);
+    };
 });

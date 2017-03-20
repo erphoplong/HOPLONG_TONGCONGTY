@@ -460,6 +460,7 @@ app.controller('danhmucCtrl', function (danhmucService, $scope) {
             }
             danhmucService.add_postcategories(postcate).then(function (response) {
                 $scope.loadDanhMuc();
+                reload();
             });
         });
     };
@@ -944,33 +945,90 @@ app.controller('nhomnghiepvuCtrl', function (nhomnghiepvuService, $scope) {
     $scope.add = function () {
         var data_add = {
             TEN_NHOM: $scope.tennhom,
-            DIEN_GIAI : $scope.diengiai
+            DIEN_GIAI: $scope.diengiai,
+            TRUC_THUOC : "HOPLONG"
         }
         nhomnghiepvuService.add_nhomnghiepvu(data_add).then(function (response) {
             $scope.load_nhomnghiepvu();
         });
     };
 
-    $scope.save = function (id) {
+    $scope.save = function (tennhom) {
         var data_save = {
-            ID: id,
-            TEN_NHOM: $scope.item.TEN_NHOM,
-            DIEN_GIAI : $scope.item.DIEN_GIAI
+            TEN_NHOM: tennhom,
+            DIEN_GIAI: $scope.item.DIEN_GIAI,
+            TRUC_THUOC: "HOPLONG"
         }
-        nhomnghiepvuService.save_nhomnghiepvu(id, data_save).then(function (response) {
+        nhomnghiepvuService.save_nhomnghiepvu(tennhom, data_save).then(function (response) {
             $scope.load_nhomnghiepvu();
         });
     };
 
-    $scope.delete = function (id) {
+    $scope.delete = function (tennhom) {
         var data_delete = {
-            ID : id
+            TEN_NHOM: tennhom
         }
-        nhomnghiepvuService.delete_nhomnghiepvu(id, data_delete).then(function (response) {
+        nhomnghiepvuService.delete_nhomnghiepvu(tennhom, data_delete).then(function (response) {
             $scope.load_nhomnghiepvu();
         });
     };
 });
+
+
+app.controller('chitietnghiepvuCtrl', function (chitietnghiepvuService, $scope) {
+    $scope.load_chitietnghiepvu = function () {
+        chitietnghiepvuService.get_chitietnghiepvu().then(function (a) {
+            $scope.list_chitietnghiepvu = a;
+        });
+    };
+    $scope.load_chitietnghiepvu();
+
+
+    $scope.transfer = function (item) {
+        var url = document.location.href;
+        //this removes the anchor at the end, if there is one
+        url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+        //this removes the query after the file name, if there is one
+        url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+        //this removes everything before the last slash in the path
+        url = url.substring(url.lastIndexOf("/") + 1, url.length);
+        //return
+        $scope.item = item;
+        var mamota = $scope.item.ID;
+        var pathArray = window.location.pathname.split('/');
+        chitietnghiepvuService.get_trangthai(url, mamota).then(function (a) {
+            $scope.listtrangthai = a;
+            if ($scope.listtrangthai == true) {
+                $scope.class = function () {
+                    return ("hienthi");
+                };
+                $scope.delete = function () {
+                    chitietnghiepvuService.delete_chitietnhomnghiepvu(url,mamota).then(function (response) {
+                        reload();
+                    });
+                };
+            } else {
+                $scope.class = function () {
+                    return ("nothienthi");
+                };
+                $scope.create = function () {
+                    var data_add = {
+                        ID_NHOM_NGHIEP_VU: url,
+                        ID_CHI_TIET_NGHIEP_VU: mamota,
+                    }
+                    chitietnghiepvuService.add_chitietnhomnghiepvu(data_add).then(function (response) {
+                        reload();
+                    });
+                };
+            }
+        });
+    };
+
+
+});
+
+
+
 
 
 
